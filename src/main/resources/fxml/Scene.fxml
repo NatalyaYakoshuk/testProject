@@ -19,5 +19,6 @@
       <Label layoutX="56.0" layoutY="50.0" text="Сортировка" />
       <DatePicker layoutX="729.0" layoutY="50.0" />
       <Label layoutX="724.0" layoutY="20.0" text="Выберите дату для отображения " />
+      <Label layoutX="724.0" layoutY="20.0" text="Выберите дату для отображения " />
    </children>
 </Pane>
