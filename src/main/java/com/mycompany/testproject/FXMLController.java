@@ -10,6 +10,8 @@ import javafx.fxml.FXMLLoader;
 
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
@@ -19,6 +21,28 @@ public class FXMLController implements Initializable {
     
     StackPane stackPane;
     Pane pane;
+    
+     Double oldX;
+   Double oldY;
+   
+    @FXML
+    private Pane mypane;
+    
+    
+    @FXML
+    public void mouseMovedAction(javafx.scene.input.MouseEvent event){
+         oldX = mypane.getTranslateX() - event.getSceneX();
+         oldY = mypane.getTranslateY() - event.getSceneY();
+
+    }
+   
+    @FXML
+    public void mouseDraggedAction(javafx.scene.input.MouseEvent event){
+         mypane.setTranslateX(oldX+event.getSceneX());
+         mypane.setTranslateY(oldY+event.getSceneY());
+        
+    }
+    
     
     @FXML
     private void handleReloadButtonAction(ActionEvent event) {

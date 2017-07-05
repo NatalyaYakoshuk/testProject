@@ -19,6 +19,20 @@
       <Label layoutX="56.0" layoutY="50.0" text="Сортировка" />
       <DatePicker layoutX="729.0" layoutY="50.0" />
       <Label layoutX="724.0" layoutY="20.0" text="Выберите дату для отображения " />
-      <Label layoutX="724.0" layoutY="20.0" text="Выберите дату для отображения " />
+      
+       <Pane fx:id="mypane" layoutX="24.0" layoutY="120.0" onMouseDragged="#mouseDraggedAction" onMouseMoved="#mouseMovedAction" prefHeight="211.0" prefWidth="274.0" style="-fx-background-color: #87CEFA">
+         <children>
+            <TextArea fx:id="textArea" layoutX="10.0" layoutY="41.0" prefHeight="165.0" prefWidth="253.0" text="Какие то супер важные данные">
+               <effect>
+                  <DropShadow color="#00000097" />
+               </effect></TextArea>
+            <Label layoutX="14.0" layoutY="14.0" text="Данные об осмотре пациента">
+               <effect>
+                  <Blend />
+               </effect></Label>
+         </children>
+         <effect>
+            <DropShadow color="#00000044" height="51.39" radius="33.905" width="86.23" />
+         </effect></Pane>
    </children>
 </Pane>
