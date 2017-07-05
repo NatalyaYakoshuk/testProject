@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="203.0" prefWidth="318.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.mycompany.testproject.FXMLController">
-    <children>
-        <Button fx:id="button" layoutX="126" layoutY="90" onAction="#handleButtonAction" text="Click Me!" />
-        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <ChoiceBox fx:id="choiceBox" layoutX="14.0" layoutY="22.0" prefWidth="150.0" />
-    </children>
-</AnchorPane>
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="977.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.testproject.FXMLController">
+   <children>
+      <StackPane fx:id="stackPane" layoutX="12.0" layoutY="93.0" prefHeight="445.0" prefWidth="953.0" />
+      <Button fx:id="reloadButton" layoutX="425.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleReloadButtonAction" text="Reload" />
+      <CheckBox layoutX="165.0" layoutY="20.0" mnemonicParsing="false" text="Исследования" />
+      <CheckBox layoutX="425.0" layoutY="20.0" mnemonicParsing="false" text="Услуги и диагнозы" />
+      <CheckBox layoutX="165.0" layoutY="50.0" mnemonicParsing="false" text="Врачебные протоколы" />
+      <CheckBox layoutX="270.0" layoutY="20.0" mnemonicParsing="false" text="По определенной дате" />
+      <Label layoutX="56.0" layoutY="20.0" text="Отображение" />
+      <Label layoutX="56.0" layoutY="50.0" text="Сортировка" />
+      <DatePicker layoutX="729.0" layoutY="50.0" />
+      <Label layoutX="724.0" layoutY="20.0" text="Выберите дату для отображения " />
+   </children>
+</Pane>
