@@ -18,7 +18,8 @@
              <CheckBox layoutX="270.0" layoutY="20.0" mnemonicParsing="false" text="По определенной дате" /> 
              <Label layoutX="50.0" layoutY="20.0" text="Отображение:" /> 
              <Label layoutX="50.0" layoutY="50.0" text="Сортировка:" /> 
-             <DatePicker layoutX="717.0" layoutY="50.0" /> 
+              
+             <Spinner fx:id="spinner" layoutX="717.0" layoutY="50.0"/>
              <Label layoutX="707.0" layoutY="20.0" text="Выберите дату для отображения " /> 
                  <Pane fx:id="mypane" layoutX="138.0" layoutY="107.0" onMouseDragged="#mouseDraggedAction" onMouseMoved="#mouseMovedAction" prefHeight="221.0" prefWidth="305.0" style="-fx-background-color: #87CEFA">
                <children>
